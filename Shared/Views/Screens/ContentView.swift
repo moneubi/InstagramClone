@@ -30,7 +30,7 @@ struct tabViewSection: View{
         
         TabView{
             
-            FeedView()
+            FeedView(posts: PostArrayObject())
                 .tabItem{
                     
                     Image(systemName: "book.fill")
