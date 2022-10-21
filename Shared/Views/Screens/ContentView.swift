@@ -10,8 +10,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        //Tab
-        tabViewSection()
+        NavigationView{
+            
+            //Tab
+            tabViewSection()
+        }
     }
 }
 
@@ -27,7 +30,7 @@ struct tabViewSection: View{
         
         TabView{
             
-            Text("Screen One")
+            FeedView()
                 .tabItem{
                     
                     Image(systemName: "book.fill")
