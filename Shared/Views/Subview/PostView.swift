@@ -45,12 +45,18 @@ struct PostView: View {
                 
                 Image(systemName: "heart")
                     .font(.title3)
+                    .foregroundColor(.primary)
                 
-                Image(systemName: "bubble.middle.bottom")
-                    .font(.title3)
+                NavigationLink(destination: CommentView(), label: {
+                    
+                    Image(systemName: "bubble.middle.bottom")
+                        .font(.title3)
+                        .foregroundColor(.primary)
+                })
                 
                 Image(systemName: "paperplane")
                     .font(.title3)
+                    .foregroundColor(.primary)
                 
                 Spacer()
             })
