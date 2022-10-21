@@ -14,6 +14,12 @@
 		131441E92902C4D300732AF7 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441E72902C4D200732AF7 /* PostView.swift */; };
 		131441EC2902D52E00732AF7 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441EB2902D52E00732AF7 /* PostModel.swift */; };
 		131441EE2902D8D200732AF7 /* PostArrayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441ED2902D8D200732AF7 /* PostArrayObject.swift */; };
+		131441F02902DF4E00732AF7 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441EF2902DF4E00732AF7 /* CommentView.swift */; };
+		131441F12902DF4E00732AF7 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441EF2902DF4E00732AF7 /* CommentView.swift */; };
+		131441F32902E33600732AF7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441F22902E33600732AF7 /* MessageView.swift */; };
+		131441F42902E33600732AF7 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441F22902E33600732AF7 /* MessageView.swift */; };
+		131441F62902E46800732AF7 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441F52902E46800732AF7 /* CommentModel.swift */; };
+		131441F72902E46800732AF7 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441F52902E46800732AF7 /* CommentModel.swift */; };
 		1392C27728F9808C009B0CBF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C27628F9808C009B0CBF /* Tests_iOS.swift */; };
 		1392C27928F9808C009B0CBF /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C27828F9808C009B0CBF /* Tests_iOSLaunchTests.swift */; };
 		1392C28328F9808C009B0CBF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C28228F9808C009B0CBF /* Tests_macOS.swift */; };
@@ -49,6 +55,9 @@
 		131441E72902C4D200732AF7 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		131441EB2902D52E00732AF7 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		131441ED2902D8D200732AF7 /* PostArrayObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArrayObject.swift; sourceTree = "<group>"; };
+		131441EF2902DF4E00732AF7 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		131441F22902E33600732AF7 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		131441F52902E46800732AF7 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		1392C25E28F98088009B0CBF /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		1392C25F28F98088009B0CBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1392C26028F9808B009B0CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +119,7 @@
 				1392C25E28F98088009B0CBF /* InstagramCloneApp.swift */,
 				1392C25F28F98088009B0CBF /* ContentView.swift */,
 				131441E42902C3F000732AF7 /* FeedView.swift */,
+				131441EF2902DF4E00732AF7 /* CommentView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -118,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				131441E72902C4D200732AF7 /* PostView.swift */,
+				131441F22902E33600732AF7 /* MessageView.swift */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 			children = (
 				131441EB2902D52E00732AF7 /* PostModel.swift */,
 				131441ED2902D8D200732AF7 /* PostArrayObject.swift */,
+				131441F52902E46800732AF7 /* CommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -358,9 +370,12 @@
 			files = (
 				131441E52902C3F000732AF7 /* FeedView.swift in Sources */,
 				131441EC2902D52E00732AF7 /* PostModel.swift in Sources */,
+				131441F02902DF4E00732AF7 /* CommentView.swift in Sources */,
+				131441F32902E33600732AF7 /* MessageView.swift in Sources */,
 				1392C28828F9808C009B0CBF /* ContentView.swift in Sources */,
 				131441E32902BBC000732AF7 /* Extensions.swift in Sources */,
 				131441EE2902D8D200732AF7 /* PostArrayObject.swift in Sources */,
+				131441F62902E46800732AF7 /* CommentModel.swift in Sources */,
 				131441E82902C4D300732AF7 /* PostView.swift in Sources */,
 				1392C28628F9808C009B0CBF /* InstagramCloneApp.swift in Sources */,
 			);
@@ -370,9 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				131441F42902E33600732AF7 /* MessageView.swift in Sources */,
 				1392C28928F9808C009B0CBF /* ContentView.swift in Sources */,
 				131441E62902C3F000732AF7 /* FeedView.swift in Sources */,
 				131441E92902C4D300732AF7 /* PostView.swift in Sources */,
+				131441F72902E46800732AF7 /* CommentModel.swift in Sources */,
+				131441F12902DF4E00732AF7 /* CommentView.swift in Sources */,
 				1392C28728F9808C009B0CBF /* InstagramCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
