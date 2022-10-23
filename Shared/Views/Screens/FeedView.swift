@@ -10,6 +10,7 @@ import SwiftUI
 struct FeedView: View {
     
     @ObservedObject var posts: PostArrayObject
+    var title: String
     
     var body: some View {
         
@@ -19,11 +20,11 @@ struct FeedView: View {
                 
                 ForEach(posts.dataArray, id: \.id){ post in
                     
-                    PostView(post: post)
+                    PostView(post: post, showHeaderAndFooter: true)
                 }
             }
         })
-        .navigationTitle("FEED VIEW")
+        .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -34,7 +35,7 @@ struct FeedView_Previews: PreviewProvider {
         
         NavigationView{
             
-           FeedView(posts: PostArrayObject())
+            FeedView(posts: PostArrayObject(), title: "Feed test")
         }
     }
 }
