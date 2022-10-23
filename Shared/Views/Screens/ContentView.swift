@@ -44,7 +44,7 @@ struct tabViewSection: View{
                     Image(systemName: "magnifyingglass")
                     Text("Browse")
                 }
-            Text("Screen Three")
+            UploadView()
                 .tabItem{
                     
                     Image(systemName: "square.and.arrow.up.fill")

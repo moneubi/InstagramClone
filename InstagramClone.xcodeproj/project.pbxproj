@@ -26,6 +26,10 @@
 		131441FD29055F0400732AF7 /* CarousselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441FB29055F0400732AF7 /* CarousselView.swift */; };
 		131441FF2905672A00732AF7 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441FE2905672A00732AF7 /* ImageGridView.swift */; };
 		131442002905672A00732AF7 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131441FE2905672A00732AF7 /* ImageGridView.swift */; };
+		131442022905839500732AF7 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131442012905839500732AF7 /* UploadView.swift */; };
+		131442032905839500732AF7 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131442012905839500732AF7 /* UploadView.swift */; };
+		1314420529058B7100732AF7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1314420429058B7100732AF7 /* ImagePicker.swift */; };
+		1314420629058B7100732AF7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1314420429058B7100732AF7 /* ImagePicker.swift */; };
 		1392C27728F9808C009B0CBF /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C27628F9808C009B0CBF /* Tests_iOS.swift */; };
 		1392C27928F9808C009B0CBF /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C27828F9808C009B0CBF /* Tests_iOSLaunchTests.swift */; };
 		1392C28328F9808C009B0CBF /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1392C28228F9808C009B0CBF /* Tests_macOS.swift */; };
@@ -67,6 +71,8 @@
 		131441F829055B3C00732AF7 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		131441FB29055F0400732AF7 /* CarousselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarousselView.swift; sourceTree = "<group>"; };
 		131441FE2905672A00732AF7 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		131442012905839500732AF7 /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		1314420429058B7100732AF7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1392C25E28F98088009B0CBF /* InstagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneApp.swift; sourceTree = "<group>"; };
 		1392C25F28F98088009B0CBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1392C26028F9808B009B0CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				131441E42902C3F000732AF7 /* FeedView.swift */,
 				131441EF2902DF4E00732AF7 /* CommentView.swift */,
 				131441F829055B3C00732AF7 /* BrowseView.swift */,
+				131442012905839500732AF7 /* UploadView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				131441F22902E33600732AF7 /* MessageView.swift */,
 				131441FB29055F0400732AF7 /* CarousselView.swift */,
 				131441FE2905672A00732AF7 /* ImageGridView.swift */,
+				1314420429058B7100732AF7 /* ImagePicker.swift */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -391,6 +399,8 @@
 				131441EE2902D8D200732AF7 /* PostArrayObject.swift in Sources */,
 				131441F929055B3C00732AF7 /* BrowseView.swift in Sources */,
 				131441F62902E46800732AF7 /* CommentModel.swift in Sources */,
+				131442022905839500732AF7 /* UploadView.swift in Sources */,
+				1314420529058B7100732AF7 /* ImagePicker.swift in Sources */,
 				131441E82902C4D300732AF7 /* PostView.swift in Sources */,
 				1392C28628F9808C009B0CBF /* InstagramCloneApp.swift in Sources */,
 			);
@@ -401,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				131442002905672A00732AF7 /* ImageGridView.swift in Sources */,
+				131442032905839500732AF7 /* UploadView.swift in Sources */,
 				131441FA29055B3C00732AF7 /* BrowseView.swift in Sources */,
 				131441F42902E33600732AF7 /* MessageView.swift in Sources */,
 				1392C28928F9808C009B0CBF /* ContentView.swift in Sources */,
@@ -408,6 +419,7 @@
 				131441E92902C4D300732AF7 /* PostView.swift in Sources */,
 				131441F72902E46800732AF7 /* CommentModel.swift in Sources */,
 				131441F12902DF4E00732AF7 /* CommentView.swift in Sources */,
+				1314420629058B7100732AF7 /* ImagePicker.swift in Sources */,
 				1392C28728F9808C009B0CBF /* InstagramCloneApp.swift in Sources */,
 				131441FD29055F0400732AF7 /* CarousselView.swift in Sources */,
 			);
@@ -563,8 +575,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera at the user's request to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This allows the app to access the photo library to import or save photo at the user's request.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -592,8 +607,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera at the user's request to take a photo.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This allows the app to access the photo library to import or save photo at the user's request.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
