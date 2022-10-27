@@ -50,7 +50,9 @@ struct tabViewSection: View{
                     Image(systemName: "square.and.arrow.up.fill")
                     Text("Upload")
                 }
-            Text("Screen Four")
+            NavigationView{
+                ProfileView(isMyProfile: true, profileDisplayname: "My Profile", profileUserID: "")
+            }
                 .tabItem{
                     
                     Image(systemName: "person.fill")

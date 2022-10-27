@@ -21,16 +21,19 @@ struct PostView: View {
                 //Header
                 HStack{
                     
-                    Image("dog1")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 30, height: 30, alignment: .center)
-                        .cornerRadius(15)
-                    
-                    Text(post.username)
-                        .font(.callout)
-                        .fontWeight(.medium)
-                        .foregroundColor(.primary)
+                    NavigationLink( destination: ProfileView(isMyProfile: false, profileDisplayname: post.username, profileUserID: post.userID), label: {
+                        
+                        Image("dog1")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .cornerRadius(15)
+                        
+                        Text(post.username)
+                            .font(.callout)
+                            .fontWeight(.medium)
+                            .foregroundColor(.primary)
+                    })
                     
                     Spacer()
                     Image(systemName: "ellipsis")
